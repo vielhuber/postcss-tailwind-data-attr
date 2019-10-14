@@ -14,6 +14,12 @@
 [data-tw="md:text-xl"] {}
 ```
 
+## Installation
+
+```sh
+npm install postcss-tailwind-data-attr
+```
+
 ## Usage
 
 Check you project for existed PostCSS config: `postcss.config.js`
