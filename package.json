@@ -1,6 +1,6 @@
 {
   "name": "postcss-tailwind-data-attr",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "PostCSS plugin that moves tailwind classes to data attributes",
   "keywords": [
     "postcss",

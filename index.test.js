@@ -10,11 +10,11 @@ async function run (input, output, opts) {
 
 it('basic tests', async () => {
   await run('.foo {}', '.foo {}', {})
-  await run('.tw-text-left {}', '[data-tw="text-left"] {}', {})
-  await run('.md:tw-text-xl {}', '[data-tw="md:text-xl"] {}', {})
+  await run('.tw-text-left {}', '[data-tw~="text-left"] {}', {})
+  await run('.md:tw-text-xl {}', '[data-tw~="md:text-xl"] {}', {})
   await run(
     '.tw-text-left.md:tw-text-xl {}',
-    '[data-tw="text-left"][data-tw="md:text-xl"] {}',
+    '[data-tw~="text-left"][data-tw~="md:text-xl"] {}',
     {}
   )
 })
