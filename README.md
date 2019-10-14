@@ -10,7 +10,7 @@
 ```
 
 ```css
-[data-tw='text-left'] {}
+[data-tw="text-left"] {}
 [data-tw="md:text-xl"] {}
 ```
 
