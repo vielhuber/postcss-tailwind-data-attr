@@ -24,4 +24,9 @@ it('basic tests', async () => {
     '[data-tw~="sm:space-x-96"] > :not([hidden]) ~ :not([hidden]) {}',
     {}
   )
+  await run(
+    '.tw-space-y-1\\.5 > :not([hidden]) ~ :not([hidden]) {}',
+    '[data-tw~="space-y-1\\.5"] > :not([hidden]) ~ :not([hidden]) {}',
+    {}
+  )
 })

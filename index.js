@@ -8,6 +8,7 @@ module.exports = () => {
             .split(' ')
             .map(j =>
               j
+                .replace(/\\\./g, 'SPECIALSEPARATOR')
                 .split('.')
                 .map(i => {
                   if (i === '') {
@@ -19,6 +20,7 @@ module.exports = () => {
                   return i
                 })
                 .join('')
+                .replace(/SPECIALSEPARATOR/g, '\\.')
             )
             .join(' ')
         }
