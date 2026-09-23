@@ -11,6 +11,7 @@ async function run (input, output, opts) {
 }
 
 it('basic tests', async () => {
+  expect.hasAssertions()
   await run('.foo {}', '.foo {}', {})
   await run('.tw-text-left {}', '[data-tw~="text-left"] {}', {})
   await run('.md:tw-text-xl {}', '[data-tw~="md:text-xl"] {}', {})

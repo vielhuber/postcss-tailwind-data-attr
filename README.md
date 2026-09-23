@@ -5,13 +5,17 @@
 [postcss]: https://github.com/postcss/postcss
 
 ```css
-.tw-text-left {}
-.md:tw-text-xl {}
+.tw-text-left {
+}
+.md:tw-text-xl {
+}
 ```
 
 ```css
-[data-tw="text-left"] {}
-[data-tw="md:text-xl"] {}
+[data-tw="text-left"] {
+}
+[data-tw="md:text-xl"] {
+}
 ```
 
 ## Installation
